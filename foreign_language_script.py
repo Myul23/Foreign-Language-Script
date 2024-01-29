@@ -37,6 +37,7 @@ def file_save(texts: str, address: str):
 
 
 if __name__ == "__main__":
-    script_input = "Foreign Language Script/foreign_language_script_test_input.txt"
-    script_output = "Foreign Language Script/foreign_language_script_test_output.txt"
+    base_address = "1. once/Foreign Language Script"
+    script_input = base_address + "/foreign_language_script_test_input.txt"
+    script_output = base_address + "/foreign_language_script_test_output.txt"
     file_save(transform(file_read(script_input)), script_output)
