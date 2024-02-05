@@ -24,7 +24,7 @@ def transform(input_texts: str):
 
             line = "`" + line + "`"
         text.append(line)
-    return "## " + "\n\n<br>\n\n".join(output_texts)
+    return "## " + "\n\n<br />\n\n".join(output_texts)
 
 
 def file_save(texts: str, address: str):
